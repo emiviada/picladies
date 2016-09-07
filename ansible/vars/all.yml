@@ -1,0 +1,28 @@
+---
+server:
+    install: '1'
+    packages: [vim, git, nodejs, npm]
+    timezone: UTC
+    locale: en_US.UTF-8
+vagrant_local:
+    install: '1'
+    vm: { base_box: trusty64, hostname: picladies, ip: 192.168.33.99, memory: '1024', sharedfolder: ./, useVagrantCloud: '1', syncType: nfs }
+nginx:
+    install: '1'
+    docroot: /vagrant
+    servername: picladies.vb
+mysql:
+    install: '1'
+    root_password: '123'
+    database: picladies
+    user: user
+    password: password
+    dump: ''
+php:
+    install: '1'
+    ppa: php #PHP 7
+    version: 'php7.0'
+    packages: []
+composer:
+    install: '1'
+
