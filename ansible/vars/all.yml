@@ -10,7 +10,7 @@ vagrant_local:
 nginx:
     install: '1'
     docroot: /vagrant
-    servername: picladies.vb
+    servername: picladies
 mysql:
     install: '1'
     root_password: '123'

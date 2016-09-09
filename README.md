@@ -33,7 +33,7 @@ Change to picladies directory
 $ cd picladies
 ```
 
-Run composer install to install dependencies:
+Run composer install under the /admin folder to install php dependencies:
 
 ```
 $ composer install
