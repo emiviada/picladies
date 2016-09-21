@@ -22,7 +22,7 @@
 - name: Install PHP Packages
   become: yes
   become_method: sudo
-  apt: pkg={{ item }} state=latest
+  apt: pkg={{ php.version }}-{{ item }} state=latest
   with_items: "{{ php.packages }}"
   when: php.packages is defined
 

@@ -42,7 +42,7 @@
     <div class="register-box-body">
         <p class="login-box-msg">Register a new membership</p>
 
-        <form method="post" action="{{ url('/register') }}">
+        <form method="post" action="{{ url('/admin/register') }}">
 
             {!! csrf_field() !!}
 
@@ -106,7 +106,7 @@
             </div>
         </form>
 
-        <a href="{{ url('/login') }}" class="text-center">I already have a membership</a>
+        <a href="{{ url('/admin/login') }}" class="text-center">I already have a membership</a>
     </div>
     <!-- /.form-box -->
 </div>

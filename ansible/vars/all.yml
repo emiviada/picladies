@@ -15,14 +15,14 @@ mysql:
     install: '1'
     root_password: '123'
     database: picladies
-    user: user
-    password: password
+    user: picladies
+    password: local
     dump: ''
 php:
     install: '1'
     ppa: php #PHP 7
     version: 'php7.0'
-    packages: []
+    packages: ['mysql']
 composer:
     install: '1'
 
